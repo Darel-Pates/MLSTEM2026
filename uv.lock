@@ -280,6 +280,7 @@ dependencies = [
     { name = "numpy" },
     { name = "opencv-python" },
     { name = "pillow" },
+    { name = "pip" },
     { name = "pyqt5" },
     { name = "pyqt5-qt5", marker = "sys_platform == 'win32'" },
     { name = "pyqt6" },
@@ -312,11 +313,12 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.3.5" },
     { name = "opencv-python", specifier = ">=4.13.0.92" },
     { name = "pillow", specifier = ">=12.1.0" },
+    { name = "pip", specifier = ">=26.1.2" },
     { name = "pyqt5", specifier = ">=5.15.11,<5.16" },
     { name = "pyqt5-qt5", marker = "sys_platform == 'win32'", specifier = "==5.15.2" },
     { name = "pyqt6", specifier = ">=6.8,<6.13" },
     { name = "pytango", specifier = "==10.1.2" },
-    { name = "pytemlib", specifier = ">=0.2024.1.0" },
+    { name = "pytemlib", specifier = ">=0.2026.6.0" },
     { name = "pytest", specifier = ">=9.0.2" },
     { name = "pyyaml", specifier = ">=6.0.3" },
     { name = "ruff", specifier = ">=0.15.2" },
@@ -2375,6 +2377,15 @@ wheels = [
 ]
 
 [[package]]
+name = "nodejs"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "optional-django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/eb/ee/97ee0b973d072702eb2927c0eb90647cc0e4598663ed8e591c1ca4120dd9/nodejs-0.1.1.tar.gz", hash = "sha256:4c585fecc51a91b151bbc6dd01c0fb8d93f29f897a8298009205b59b80b52933", size = 2325, upload-time = "2015-03-22T10:15:32.115Z" }
+
+[[package]]
 name = "notebook"
 version = "7.6.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2402,6 +2413,15 @@ sdist = { url = "https://files.pythonhosted.org/packages/54/d2/92fa3243712b9a3e8
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f9/33/bd5b9137445ea4b680023eb0469b2bb969d61303dedb2aac6560ff3d14a1/notebook_shim-0.2.4-py3-none-any.whl", hash = "sha256:411a5be4e9dc882a074ccbcae671eda64cceb068767e9a3419096986560e1cef", size = 13307, upload-time = "2024-02-14T23:35:16.286Z" },
 ]
+
+[[package]]
+name = "npm"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "optional-django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ca/4d/7d59d82b777f3f7a1128608195655a1b36c1de89c292363d53d52d92a807/npm-0.1.1.tar.gz", hash = "sha256:84aefc83a3486d034c4c14f8bcd4b746b95b529289b0d042c268f6201c3034e9", size = 2521, upload-time = "2015-03-22T10:19:15.831Z" }
 
 [[package]]
 name = "numba"
@@ -2651,6 +2671,19 @@ wheels = [
 ]
 
 [[package]]
+name = "ollama"
+version = "0.6.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpx" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fc/72/5f12423b6b39ca8430fbe56f77fcf4ef60f63067c7c4a2e30e200ed9ec16/ollama-0.6.2.tar.gz", hash = "sha256:936d55daa684f474364c098611c933626f8d6c7d67065c5b7ae0c477b508b07f", size = 53145, upload-time = "2026-04-29T21:21:15.018Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c4/ab/d6722beeb2d10f7a3b9ff49375708904fde18f82b5609a0bc4aeb5996a4d/ollama-0.6.2-py3-none-any.whl", hash = "sha256:3ad7daab28e5a973445c36a73882a3ef698c2ebb00e21e308652741577509f7d", size = 15115, upload-time = "2026-04-29T21:21:13.794Z" },
+]
+
+[[package]]
 name = "openapi-pydantic"
 version = "0.5.1"
 source = { registry = "https://pypi.org/simple" }
@@ -2703,6 +2736,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/b4/1c/125e1c936c0873796
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a3/ca/9520cc1f3dfbbd03ac5903bbf55833e257bc64b1cf30fa8b0d6df374d821/opentelemetry_api-1.42.1-py3-none-any.whl", hash = "sha256:51a69edacadbc03a8950ace1c4c21099cacc538820ac2c9e36277e78cebba714", size = 61311, upload-time = "2026-05-21T16:32:28.822Z" },
 ]
+
+[[package]]
+name = "optional-django"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/da/9e/b9b6a3854c613da94d695a2a52ca70ad1f0c65337c1b6e37f5f447964d19/optional-django-0.1.0.tar.gz", hash = "sha256:77d6b9fb74bda30583e1af4683a39e0af725cea6003252bba75838f4939326c5", size = 9530, upload-time = "2015-03-22T10:10:14.628Z" }
 
 [[package]]
 name = "orjson"
@@ -2826,6 +2865,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/be/42/025cfe05d1be22dbfdb4f264fe9de1ccda83f66e4fc3aac94748e784af04/pillow-12.2.0-cp312-cp312-win32.whl", hash = "sha256:58f62cc0f00fd29e64b29f4fd923ffdb3859c9f9e6105bfc37ba1d08994e8940", size = 6378489, upload-time = "2026-04-01T14:43:34.601Z" },
     { url = "https://files.pythonhosted.org/packages/5d/7b/25a221d2c761c6a8ae21bfa3874988ff2583e19cf8a27bf2fee358df7942/pillow-12.2.0-cp312-cp312-win_amd64.whl", hash = "sha256:7f84204dee22a783350679a0333981df803dac21a0190d706a50475e361c93f5", size = 7084129, upload-time = "2026-04-01T14:43:37.213Z" },
     { url = "https://files.pythonhosted.org/packages/10/e1/542a474affab20fd4a0f1836cb234e8493519da6b76899e30bcc5d990b8b/pillow-12.2.0-cp312-cp312-win_arm64.whl", hash = "sha256:af73337013e0b3b46f175e79492d96845b16126ddf79c438d7ea7ff27783a414", size = 2463612, upload-time = "2026-04-01T14:43:39.421Z" },
+]
+
+[[package]]
+name = "pip"
+version = "26.1.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/01/91/47e7d486260f618783899587af63ccf7980fb60245c3e63dd4571c6b57ad/pip-26.1.2.tar.gz", hash = "sha256:f49cd134c61cf2fd75e0ce2676db03e4054504a5a4986d00f8299ae632dc4605", size = 1840799, upload-time = "2026-05-31T17:33:58.56Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5d/95/6b5cb3461ea5673ba0995989746db58eb18b91b54dbf331e72f569540946/pip-26.1.2-py3-none-any.whl", hash = "sha256:382ff9f685ee3bc25864f820aa50505825f10f5458ffff07e30a6d96e5715cab", size = 1813144, upload-time = "2026-05-31T17:33:56.772Z" },
 ]
 
 [[package]]
@@ -3272,15 +3320,22 @@ wheels = [
 
 [[package]]
 name = "pytemlib"
-version = "0.2026.3.0"
+version = "0.2026.6.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ase" },
+    { name = "fastmcp" },
     { name = "ipympl" },
+    { name = "jupyter" },
+    { name = "jupyterlab" },
     { name = "lxml" },
+    { name = "nodejs" },
+    { name = "npm" },
     { name = "numpy" },
+    { name = "ollama" },
     { name = "pandas" },
     { name = "pillow" },
+    { name = "pip" },
     { name = "plotly" },
     { name = "pynsid" },
     { name = "requests" },
@@ -3294,9 +3349,9 @@ dependencies = [
     { name = "tqdm" },
     { name = "xraylib" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/97/53/51f3aeea0a8912c96afc0e8e04f834d8ce4420ff9e5bc34cde42b33407ca/pytemlib-0.2026.3.0.tar.gz", hash = "sha256:237261f6f291eab59a096fb78cdee8bd1b2e8d5f1114d28af3430658fe5630b6", size = 900832, upload-time = "2026-03-06T16:24:58.677Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/79/cf/ceb1e3e06829da228a2a36aebf9f1e2d778c86a2c45dd20060ead4dfca84/pytemlib-0.2026.6.0.tar.gz", hash = "sha256:7094b85be2a546a94c02383e4f9ba781e3e498c8e6bd9e258f502c1e90f37876", size = 921549, upload-time = "2026-06-19T19:03:46.439Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/82/0f/eebe042d11bcf2f0eef4f5b0c9db0115fb4d3933d0a707fe3c9a0829d370/pytemlib-0.2026.3.0-py3-none-any.whl", hash = "sha256:33ee78a7bc399971a8076bce744ecbceb84f23247ddf4c4ee5df1dcac1ac5985", size = 1473706, upload-time = "2026-03-06T16:24:57.103Z" },
+    { url = "https://files.pythonhosted.org/packages/a4/17/40fc3812913d5bd659eeb8edb46d3cef5e5212e1c5850960fce2bc6f26e3/pytemlib-0.2026.6.0-py3-none-any.whl", hash = "sha256:0435c9718b2ed8ba7f09dc8a402ee3381b718bf4f50a06b55942cc8887f1375d", size = 1512519, upload-time = "2026-06-19T19:03:44.845Z" },
 ]
 
 [[package]]
